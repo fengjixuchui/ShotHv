@@ -348,9 +348,10 @@ EptGetEpteEntry(
 	// 获取目标PTE
 	ULONG64 PhyA = PA;
 	PEPDE_2MB Epde = EptGetPml2Entry(Table, PhyA);
-
+	
 	if (Epde && Epde->LargePage) {
-		PEPT_DYNAMIC_SPLIT Dynentry = GetHvEptDynamicSplit();
+		//PEPT_DYNAMIC_SPLIT Dynentry = GetHvEptDynamicSplit();
+		PEPT_DYNAMIC_SPLIT Dynentry = (EPT_DYNAMIC_SPLIT*)ExAllocatePool(NonPagedPoolNx, sizeof(EPT_DYNAMIC_SPLIT));
 		if (!Dynentry || !EptSplitLargePage(Epde, Dynentry)) {
 			if (Dynentry) {
 				ExFreePool(Dynentry);

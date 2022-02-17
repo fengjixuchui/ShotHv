@@ -5,14 +5,14 @@
   HvEpt.cpp
   HvInjectException.cpp
   Lde.cpp
-  Main.cpp
   HvUtil.cpp
   HvExitHandle.cpp
   PageHook.cpp
   正在生成代码...
-  ShotHv.vcxproj -> G:\驱动开发代码\项目\ShotHv\ShotHv\x64\Debug\ShotHv.sys
+  Main.cpp
+  ShotHv.vcxproj -> F:\驱动开发代码\项目\ShotHv\HelloWorld\Test\ShotHv\x64\Debug\ShotHv.sys
   Done Adding Additional Store
-  Successfully signed: G:\\\ShotHv\ShotHv\x64\Debug\ShotHv.sys
+  Successfully signed: F:\\\ShotHv\HelloWorld\Test\ShotHv\x64\Debug\ShotHv.sys
   
   Inf2Cat task was skipped as there were no inf files to process
   

@@ -24,7 +24,7 @@ PHGetHookContextByPFN(
 )
 {
 #ifndef USE_HV_EPT
-	return STATUS_UNSUCCESSFUL;
+	return NULL;
 #endif
 
 	PPAGE_HOOK_CONTEXT pRet = NULL;
@@ -67,7 +67,7 @@ PHGetHookContextByVA(
 )
 {
 #ifndef USE_HV_EPT
-	return STATUS_UNSUCCESSFUL;
+	return NULL;
 #endif
 
 	UNREFERENCED_PARAMETER(Type);
